@@ -483,6 +483,9 @@ p{
 .min-h-\[90vh\]{
   min-height: 90vh;
 }
+.min-h-50{
+  min-height: 50vh;
+}
 .w-full{
   width: 100%;
 }
@@ -515,6 +518,18 @@ p{
 }
 .gap-5{
   gap: 1.25rem;
+}
+.gap-10{
+  gap: 2.5rem;
+}
+.divide-y > :not([hidden]) ~ :not([hidden]){
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+.divide-black > :not([hidden]) ~ :not([hidden]){
+  --tw-divide-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-divide-opacity));
 }
 .overflow-x-scroll{
   overflow-x: scroll;
@@ -555,6 +570,21 @@ p{
 }
 .bg-\[url\(\'https\:\/\/picsum\.photos\/id\/1076\/600\/400\'\)\]{
   background-image: url('https://picsum.photos/id/1076/600/400');
+}
+.bg-\[url\(\'https\:\/\/picsum\'\)\]{
+  background-image: url('https://picsum');
+}
+.bg-\[url\(\'https\:\/\/picsum-\'\)\]{
+  background-image: url('https://picsum-');
+}
+.bg-\[url\(\'\{\{https\:\/\/picsum\.photos\/id\/1076\/600\/400\}\}\'\)\]{
+  background-image: url('{{https://picsum.photos/id/1076/600/400}}');
+}
+.bg-\[url\(\'\'\)\]{
+  background-image: url('');
+}
+.bg-\[url\(\'https\:\/\/source\.unsplash\.com\/Jyg7xHRmXiU\'\)\]{
+  background-image: url('https://source.unsplash.com/Jyg7xHRmXiU');
 }
 .bg-cover{
   background-size: cover;
@@ -597,6 +627,14 @@ p{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
+.px-5p{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
 .pl-5p{
   padding-left: 5%;
 }
@@ -608,6 +646,12 @@ p{
 }
 .pb-5{
   padding-bottom: 1.25rem;
+}
+.pr-5{
+  padding-right: 1.25rem;
+}
+.pb-5p{
+  padding-bottom: 5%;
 }
 .text-center{
   text-align: center;
