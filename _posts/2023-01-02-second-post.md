@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Second Blog Post 
-description: This is a short description of the first blog post
-featured_image: 'https://placekitten.com/900/600'
+title: Palm Tree Bliss
+description: Escape to a tropical paradise in our latest blog post showcasing a destination blessed with majestic palm trees. Immerse yourself in the lush greenery and towering palms that create a serene backdrop against azure skies. From palm-lined beaches to hidden oases, discover the enchanting spots where these iconic trees take center stage, providing the perfect setting for relaxation and rejuvenation. Join us on a virtual journey to Bali and let the swaying palms transport you to a world of tranquility and natural beauty
+featured_image: '/images/blog-bg-16.jpg'
+aspect-ratio: 'aspect-square'
 author: 
 seo: 
     title: This should appear in the browser tab

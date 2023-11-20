@@ -1,10 +1,10 @@
 <nav class="flex grid-cols-2 items-center justify-between px-10 py-5 uppercase bg-light-grey">
     <div>
-        <a href="#" class="font-italiana mb-0 tracking-widest text-3xl font-extralight">LOGO</a>
+        <a href="#" class="font-italiana mb-0 tracking-widest text-3xl font-extralight border-b border-transparent text-dark-grey">LOGO</a>
     </div>
     <div class="grid grid-cols-3 text-sm font-montserrat">
-        <a href="#" class="mb-0">Blog</a>
-        <a href="#" class="mb-0">Shop</a>
-        <a href="#" class="mb-0">Member's Login</a>
+        {% for item in site.data.nav %}
+        <a href="{{item.link}}" class="mb-0 text-dark-grey">{{item.name}}</a>
+        {% endfor %}
     </div>
 </nav>
