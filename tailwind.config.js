@@ -29,6 +29,8 @@ module.exports = {
       'mono': ['Inconsolata', 'ui-mono', 'monospace'],
       'soft': ['proxima-soft', 'ui-sans-serif'],
       'soft-tight': ['proxima-soft-condensed', 'ui-sans-serif'],
+      'italiana': ['Italiana', 'sans-serif'],
+      'montserrat': ['Montserrat', 'sans-serif'],
     },
     extend: {
       lineHeight: {
@@ -41,6 +43,7 @@ module.exports = {
         '10p': '10%',
         '15p': '15%',
         '20p': '20%',
+        '30p': '30%',
       },
       minHeight:{
         '100': '100vh',
@@ -56,6 +59,11 @@ module.exports = {
         'portrait': '4/5',
         '5/3': '5 / 3',
       },
+      colors: {
+        'light-grey': '#F2EFEC',
+        'medium-grey': '#E0DCD9',
+        'dark-grey': '#1E1E1E',
+      }
     },
   },
   plugins: [
