@@ -440,8 +440,63 @@ p{
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.absolute{
+  position: absolute;
+}
+.relative{
+  position: relative;
+}
+.inset-0{
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.m-4{
+  margin: 1rem;
+}
+.aspect-square{
+  aspect-ratio: 1 / 1;
+}
+.h-full{
+  height: 100%;
+}
+.w-96{
+  width: 24rem;
+}
+.w-full{
+  width: 100%;
+}
+.shrink-0{
+  flex-shrink: 0;
+}
+.bg-stone-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 244 / var(--tw-bg-opacity));
+}
+.bg-stone-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(214 211 209 / var(--tw-bg-opacity));
+}
+.bg-stone-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 229 228 / var(--tw-bg-opacity));
+}
+.bg-cover{
+  background-size: cover;
+}
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .p-8{
   padding: 2rem;
+}
+.p-4{
+  padding: 1rem;
+}
+.p-2{
+  padding: 0.5rem;
 }
 
 
@@ -449,3 +504,10 @@ p{
 
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
+
+@media (min-width: 768px){
+
+  .md\:flex{
+    display: flex;
+  }
+}
