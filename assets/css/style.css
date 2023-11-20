@@ -452,8 +452,20 @@ p{
   bottom: 0px;
   left: 0px;
 }
+.bottom-20p{
+  bottom: 20%;
+}
 .m-4{
   margin: 1rem;
+}
+.mb-0{
+  margin-bottom: 0px;
+}
+.flex{
+  display: flex;
+}
+.grid{
+  display: grid;
 }
 .aspect-square{
   aspect-ratio: 1 / 1;
@@ -461,14 +473,43 @@ p{
 .h-full{
   height: 100%;
 }
-.w-96{
-  width: 24rem;
+.min-h-\[90vh\]{
+  min-height: 90vh;
 }
 .w-full{
   width: 100%;
 }
+.w-96{
+  width: 24rem;
+}
 .shrink-0{
   flex-shrink: 0;
+}
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.items-center{
+  align-items: center;
+}
+.justify-between{
+  justify-content: space-between;
+}
+.gap-5{
+  gap: 1.25rem;
+}
+.border{
+  border-width: 1px;
+}
+.border-y{
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+.border-black{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 .bg-stone-100{
   --tw-bg-opacity: 1;
@@ -482,6 +523,17 @@ p{
   --tw-bg-opacity: 1;
   background-color: rgb(231 229 228 / var(--tw-bg-opacity));
 }
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-gray-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+.bg-\[url\(\'https\:\/\/picsum\.photos\/id\/1076\/600\/400\'\)\]{
+  background-image: url('https://picsum.photos/id/1076/600/400');
+}
 .bg-cover{
   background-size: cover;
 }
@@ -489,14 +541,30 @@ p{
   -o-object-fit: cover;
      object-fit: cover;
 }
+.p-5{
+  padding: 1.25rem;
+}
+.p-2{
+  padding: 0.5rem;
+}
 .p-8{
   padding: 2rem;
 }
 .p-4{
   padding: 1rem;
 }
-.p-2{
-  padding: 0.5rem;
+.p-5p{
+  padding: 5%;
+}
+.pl-5p{
+  padding-left: 5%;
+}
+.text-center{
+  text-align: center;
+}
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 
