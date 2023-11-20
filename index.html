@@ -20,9 +20,9 @@ seo:
 
 
  <!-- Fascinating heading about the site // hard coded -->
- <section class="grid grid-cols-2 items-center p-5p bg-light-grey border-y border-dark-grey">
+ <section class="grid md:grid-cols-2 items-center p-5p bg-light-grey border-y border-dark-grey">
 
-        <img src="/images/blog-bg-13.jpg" class="text-center p-5p max-h-80 w-full object-cover" alt="small collection of beach-themed belongings, including white sandals, a tan purse, a blue water bottle, and light blue swim suit.">
+    <img src="/images/blog-bg-13.jpg" class="text-center md:p-5p max-h-80 w-full object-cover order-last md:order-first" alt="small collection of beach-themed belongings, including white sandals, a tan purse, a blue water bottle, and light blue swim suit.">
 
     <div class="p-5p">
         <h2 class="text-4xl font-italiana">A fascinating heading about the site</h3>
@@ -38,7 +38,7 @@ seo:
  <section class="p-5p text-center">
     <h3 class="font-italiana text-2xl uppercase tracking-widest pb-5p">Upcoming Travel Destinations</h3>
 
-    <div class="grid grid-cols-2 gap-10 items-center">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
 
         <ul class="grid divide-y divide-dark-grey border-y border-dark-grey font-montserrat">
 
@@ -64,22 +64,13 @@ seo:
 
  <!-- recently on the blog -->
  <section class="bg-light-grey">
-    <h3 class="font-italiana uppercase text-center text-3xl p-5 tracking-widest">Recently on the blog...</h3>
+    <h3 class="font-italiana uppercase text-center text-3xl p-5p mb-0 tracking-widest">Recently on the blog...</h3>
     <div class="flex flex-nowrap gap-5 mx-auto overflow-x-scroll pl-1 pr-0">
+
         {% for post in site.posts %}
-	
-        <div class="{% if post.aspect-ratio == 'aspect-square' %} basis-30p {% else %} basis-45p {% endif %} shrink-0 relative pb-5">
-            <div class="bg-cover relative {{ post.aspect-ratio }}">
-                <img src="{{ post.featured_image }}" alt="{{post.title}}"class="absolute inset-0 w-full h-full object-cover ">
-            </div>
-            
-            <div class="p-2">
-                <h4 class="uppercase font-montserrat"> {{post.title}} </h4>
-                <p class="font-montserrat"> {{post.description | truncatewords: 28 }} </p>
-                <a href="{{post.url}}" class="uppercase font-italiana border-b border-dark-grey">  Read More </a>  
-            </div>
-        </div>
         
+            {% include post-loop-item.html %}
+
         {% endfor %}
         
     </div>

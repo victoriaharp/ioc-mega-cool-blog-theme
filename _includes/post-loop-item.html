@@ -1,4 +1,4 @@
-<div>
+<!-- <div>
 	
 	<div class="bg-cover aspect-square relative">
         <img src="{{ post.featured_image }}" alt="{{post.title}}" class="absolute inset-0 w-full h-full object-cover">
@@ -10,4 +10,15 @@
     	<a href="{{post.url}}">  Read More </a>  
     </div>
     
+</div> -->
+<div class="md:{% if post.aspect-ratio == 'aspect-square' %} basis-30p {% else %} basis-45p {% endif %} shrink-0 relative pb-5">
+    <div class="bg-cover relative {{ post.aspect-ratio }}">
+        <img src="{{ post.featured_image }}" alt="{{post.title}}"class="absolute inset-0 w-full h-full object-cover ">
+    </div>
+    
+    <div class="p-2">
+        <h4 class="uppercase font-montserrat"> {{post.title}} </h4>
+        <p class="font-montserrat"> {{post.description | truncatewords: 28 }} </p>
+        <a href="{{post.url}}" class="uppercase font-italiana border-b border-dark-grey">  Read More </a>  
+    </div>
 </div>
