@@ -3,13 +3,17 @@ layout: default
 ---
 
 <!-- this is the first intro section -->
-<section class="p-8 bg-stone-100">  
-	<h1> {{page.title}} </h1>
-	<p> By {{page.author}} </p>
+
+{% include hero-banner.html %}
+
+<section class="p-8 bg-stone-100 flex grid-cols-3 justify-between items-center border-t border-b border-dark-grey">  
+	<p class="font-montserrat"> By {{page.author}} </p>
+	<h1 class="font-italiana uppercase text-4xl"> {{page.title}} </h1>
+	<p class="font-montserrat">{{page.date}}</p>
 </section>
 
 <!-- this is the main content section -->
-<section class="p-8">
+<section class="p-10p text-center font-montserrat">
 	{{ content }}
 </section> 
 

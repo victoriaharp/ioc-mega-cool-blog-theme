@@ -498,6 +498,9 @@ p{
 .max-h-80{
   max-height: 80vh;
 }
+.max-h-30{
+  max-height: 30vh;
+}
 .min-h-\[90vh\]{
   min-height: 90vh;
 }
@@ -559,6 +562,9 @@ p{
 .border-b{
   border-bottom-width: 1px;
 }
+.border-t{
+  border-top-width: 1px;
+}
 .border-transparent{
   border-color: transparent;
 }
@@ -588,6 +594,12 @@ p{
 .bg-\[url\(\'\/images\/blog-bg-14\.jpg\'\)\]{
   background-image: url('/images/blog-bg-14.jpg');
 }
+.bg-\[url\(\'\/images\/blog-bg-10\.jpg\'\)\]{
+  background-image: url('/images/blog-bg-10.jpg');
+}
+.bg-\[url\(\'\/images\/blog-bg-1\.jpg\'\)\]{
+  background-image: url('/images/blog-bg-1.jpg');
+}
 .bg-cover{
   background-size: cover;
 }
@@ -609,6 +621,9 @@ p{
 }
 .p-5p{
   padding: 5%;
+}
+.p-10p{
+  padding: 10%;
 }
 .px-5{
   padding-left: 1.25rem;
