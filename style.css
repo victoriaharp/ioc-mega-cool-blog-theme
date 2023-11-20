@@ -62,5 +62,11 @@ html {
     .button  {
         @apply inline-block px-4 py-2 uppercase tracking-wide bg-zinc-800 text-white ;
     }
-    
+    .line-clamp-4{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+    }
 }
+
