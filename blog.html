@@ -1,13 +1,19 @@
 ---
 layout: default
+banner:
+    image: /images/blog-bg-17.jpg
+    heading: Explore Recent Blog Posts
+    subheading: Discover Your Next Adventure. Unveiling Hidden Gems and Exotic Destinations.
 ---
 
-<section class="p-8">
+{% include hero-banner.html %}
 
+<section class="p-8">
+	<div class="columns-3">
 	{% for post in site.posts %}
 	
-	{% include post-loop-item.html %}
+		{% include post-loop-item-free-img.html %}
 	
 	{% endfor %}
-
+	</div>
 </section>

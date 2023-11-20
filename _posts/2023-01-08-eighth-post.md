@@ -2,11 +2,11 @@
 layout: post
 title: Exploring Sumbawa 
 description: Dive into the ultimate surfing paradise with our latest blog post on Sumbawa. Discover the pristine beaches, crystal-clear waves, and vibrant surf culture that make this coastal haven a must-visit for surf enthusiasts. Whether you're a seasoned pro or a beginner catching your first wave, our guide will take you through the best surf spots, local hotspots, and tips for an unforgettable surfing experience in Sumbawa. Grab your board and join us on a virtual ride through the sun-soaked waves of this surfers' haven!
-featured_image: '/images/blog-bg-22.jpg'
+featured_image: '/images/blog-bg-7.jpg'
 aspect-ratio: 'aspect-square'
 author: Sonny Harp-Perez
 banner:
-    image: /images/blog-bg-22.jpg
+    image: /images/blog-bg-7.jpg
     heading: Exploring Sumbawa 
     subheading: Dive into the ultimate surfing paradise with our latest blog post on Sumbawa. Discover the pristine beaches, crystal-clear waves, and vibrant surf culture that make this coastal haven a must-visit for surf enthusiasts. Whether you're a seasoned pro or a beginner catching your first wave, our guide will take you through the best surf spots, local hotspots, and tips for an unforgettable surfing experience in Sumbawa. Grab your board and join us on a virtual ride through the sun-soaked waves of this surfers' haven!
 seo: 

@@ -495,6 +495,9 @@ p{
 .h-full{
   height: 100%;
 }
+.h-auto{
+  height: auto;
+}
 .max-h-80{
   max-height: 80vh;
 }
@@ -516,6 +519,9 @@ p{
 .max-w-xl{
   max-width: 36rem;
 }
+.max-w-full{
+  max-width: 100%;
+}
 .shrink-0{
   flex-shrink: 0;
 }
@@ -525,8 +531,22 @@ p{
 .basis-45p{
   flex-basis: 45%;
 }
+.columns-3{
+  -moz-columns: 3;
+       columns: 3;
+}
+.break-inside-avoid{
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
 .grid-cols-3{
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.flex-col{
+  flex-direction: column;
 }
 .flex-nowrap{
   flex-wrap: nowrap;
@@ -543,6 +563,9 @@ p{
 .gap-5{
   gap: 1.25rem;
 }
+.gap-4{
+  gap: 1rem;
+}
 .divide-y > :not([hidden]) ~ :not([hidden]){
   --tw-divide-y-reverse: 0;
   border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
@@ -554,6 +577,9 @@ p{
 }
 .overflow-x-scroll{
   overflow-x: scroll;
+}
+.rounded-lg{
+  border-radius: 0.5rem;
 }
 .border-y{
   border-top-width: 1px;
@@ -736,6 +762,10 @@ p{
 
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:justify-between{

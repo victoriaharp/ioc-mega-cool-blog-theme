@@ -8,10 +8,10 @@ current-location:
     image: /images/blog-bg-14.jpg
     location: Tuscany
 seo: 
-    title: This should appear in the browser tab
+    title: A Whole New World
     description: 
     keywords: 
-    social_image: 
+    social_image: /images/blog-bg-12.jpg
     hide-from-google: false
 --- 
 
@@ -68,7 +68,7 @@ seo:
     
     <div class="flex flex-nowrap gap-5 mx-auto overflow-x-scroll pl-1 pr-0">
 
-        {% for post in site.posts %}
+        {% for post in site.posts limit: 5 %}
         
             {% include post-loop-item.html %}
 

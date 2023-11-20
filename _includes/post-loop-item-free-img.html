@@ -11,10 +11,9 @@
     </div>
     
 </div> -->
-<div class="{% if post.aspect-ratio == 'aspect-square' %} basis-30p {% else %} basis-45p {% endif %} shrink-0 relative pb-5 break-inside-avoid">
-    <div class="bg-cover relative {{ post.aspect-ratio }}">
-        <img src="{{ post.featured_image }}" alt="{{post.title}}"class="absolute inset-0 w-full h-full object-cover ">
-    </div>
+<div class=" pb-5 break-inside-avoid">
+
+        <img src="{{ post.featured_image }}" alt="{{post.title}}"class="w-full ">
     
     <div class="p-2">
         <h4 class="uppercase font-montserrat"> {{post.title}} </h4>
