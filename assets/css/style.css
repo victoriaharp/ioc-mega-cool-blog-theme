@@ -477,6 +477,12 @@ p{
 .mb-0{
   margin-bottom: 0px;
 }
+.block{
+  display: block;
+}
+.inline-block{
+  display: inline-block;
+}
 .flex{
   display: flex;
 }
@@ -504,6 +510,12 @@ p{
 .min-h-50{
   min-height: 50vh;
 }
+.min-h-\[0vh\]{
+  min-height: 0vh;
+}
+.min-h-\[50vh\]{
+  min-height: 50vh;
+}
 .w-full{
   width: 100%;
 }
@@ -515,9 +527,6 @@ p{
 }
 .shrink-0{
   flex-shrink: 0;
-}
-.basis-2\/3{
-  flex-basis: 66.666667%;
 }
 .basis-60p{
   flex-basis: 60%;
@@ -584,6 +593,10 @@ p{
   --tw-bg-opacity: 1;
   background-color: rgb(242 239 236 / var(--tw-bg-opacity));
 }
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
 .bg-stone-100{
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 244 / var(--tw-bg-opacity));
@@ -612,6 +625,9 @@ p{
 .p-2{
   padding: 0.5rem;
 }
+.p-5{
+  padding: 1.25rem;
+}
 .p-8{
   padding: 2rem;
 }
@@ -623,6 +639,12 @@ p{
 }
 .p-5p{
   padding: 5%;
+}
+.p-3{
+  padding: 0.75rem;
+}
+.p-1{
+  padding: 0.25rem;
 }
 .px-5{
   padding-left: 1.25rem;
@@ -684,12 +706,16 @@ p{
   font-size: 0.875rem;;
   line-height: 1.2;
 }
+.text-base{
+  font-size: 1rem;
+  line-height: 1.2;
+}
 .text-8xl{
   font-size: 6rem;
   line-height: 1;
 }
-.text-base{
-  font-size: 1rem;
+.text-lg{
+  font-size: 1.125rem;;
   line-height: 1.2;
 }
 .text-4xl{

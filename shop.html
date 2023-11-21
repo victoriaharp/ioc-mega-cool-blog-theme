@@ -5,14 +5,37 @@ banner:
     supheading: shop our
     heading: Curated Collection
     subheading: Shopping our travel guides and presets teaches you to appreciate the finer things in life, to be present, live in the moment, and just breathe.
+seo: 
+    title: A Whole New World
+    description: 
+    keywords:
+    social_image: /images/blog-bg-12.jpg
+    hide-from-google: false
 ---
+
 {% include hero-banner.html %}
 
-<section>
-    <h3 class="font-italiana">Travel Guides</h3>
-
-{{ for item in page.travel-guide }}
+<section class="p-5p bg-light-grey">
+    <h3 class="font-italiana text-center text-3xl pb-5p mb-0">Travel Guides</h3>
+    <div class="grid grid-cols-3 gap-5">
     
-{{ endfor }}
+        {% for item in site.products-guides %}
+
+            {% include product-loop-item.html type='Travel Guide' %}
+
+        {% endfor %}
+    </div>
+
+</section>
+
+
+<!-- big quote banner -->
+<section class="flex pl-5p items-center min-h-[50vh] bg-center bg-cover relative text-white " style="background-image:url('{{ page.banner.image }}')">
+
+    <div class="max-w-xl">
+        <p class="font-montserrat text-base uppercase tracking-widest">{{page.banner.supheading}}</p>
+        <h1 class="font-italiana text-8xl tracking-widest">{{page.banner.heading}}</h1>
+        <h2 class="font-montserrat text-base uppercase tracking-widest">{{page.banner.subheading}}</h2>
+    </div>
 
 </section>

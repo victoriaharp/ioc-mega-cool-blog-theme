@@ -1,9 +1,9 @@
 collections:
   post:
     output: true
-  _products-presets:
+  products-presets:
     output: true
-  _products-guides:
+  products-guides:
     output: true
-  _archives :
+  archives:
     output: true

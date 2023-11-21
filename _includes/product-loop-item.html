@@ -1,0 +1,19 @@
+<div class="bg-white">
+    <img src="{{item.image}}" class="aspect-square object-cover">
+    <div class="p-5">
+        {% if include.type %}
+        <p class="font-montserrat bg-light-grey uppercase inline-block p-1 text-sm">{{include.type}}</p>
+        {% endif %}
+        <h4 class="font-montserrat text-lg uppercase">{{item.title}}</h4>
+        <p class="font-montserrat text-sm">{{item.description}}</p>
+
+        {% assign cent-check = item.price | modulo: 100 %}
+        <p class="font-montserrat text-sm">
+            {% if cent-check > 1 %}
+            ${{item.price | divided_by: 100.00}}
+            {% else %}
+            ${{item.price | divided_by: 100}}
+            {% endif %}
+        </p>
+    </div>
+</div>
