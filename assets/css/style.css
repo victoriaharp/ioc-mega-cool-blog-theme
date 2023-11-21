@@ -364,7 +364,7 @@ p{
   max-width: 36rem;
   text-align: center;
   font-family: Italiana, sans-serif;
-  font-size: 2.25rem;
+  font-size: 3rem;
   line-height: 1;
 }
 *, ::before, ::after{
@@ -459,6 +459,19 @@ p{
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.button{
+  display: inline-block;
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
 .line-clamp-4{
         overflow: hidden;
         display: -webkit-box;
@@ -483,8 +496,14 @@ p{
 .bottom-20p{
   bottom: 20%;
 }
+.bottom-0{
+  bottom: 0px;
+}
 .order-last{
   order: 9999;
+}
+.col-span-2{
+  grid-column: span 2 / span 2;
 }
 .m-4{
   margin: 1rem;
@@ -502,8 +521,14 @@ p{
 .flex{
   display: flex;
 }
+.table{
+  display: table;
+}
 .grid{
   display: grid;
+}
+.contents{
+  display: contents;
 }
 .hidden{
   display: none;
@@ -528,6 +553,9 @@ p{
 }
 .min-h-\[50vh\]{
   min-height: 50vh;
+}
+.min-h-screen{
+  min-height: 100vh;
 }
 .w-full{
   width: 100%;
@@ -558,6 +586,9 @@ p{
 .grid-cols-3{
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 .flex-nowrap{
   flex-wrap: nowrap;
 }
@@ -572,6 +603,12 @@ p{
 }
 .gap-5{
   gap: 1.25rem;
+}
+.gap-3{
+  gap: 0.75rem;
+}
+.gap-1{
+  gap: 0.25rem;
 }
 .divide-y > :not([hidden]) ~ :not([hidden]){
   --tw-divide-y-reverse: 0;
@@ -672,6 +709,14 @@ p{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.py-5p{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.px-10p{
+  padding-left: 10%;
+  padding-right: 10%;
+}
 .pt-5{
   padding-top: 1.25rem;
 }
@@ -695,6 +740,18 @@ p{
 }
 .pr-50p{
   padding-right: 50%;
+}
+.pr-5p{
+  padding-right: 5%;
+}
+.pb-10{
+  padding-bottom: 2.5rem;
+}
+.pr-10{
+  padding-right: 2.5rem;
+}
+.pr-10p{
+  padding-right: 10%;
 }
 .text-left{
   text-align: left;

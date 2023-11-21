@@ -55,7 +55,7 @@ html {
         @apply text-center pb-5;
     }
     .content blockquote{
-        @apply text-4xl font-italiana text-center max-w-xl mx-auto;
+        @apply text-5xl font-italiana text-center max-w-xl mx-auto;
     }
   }
 

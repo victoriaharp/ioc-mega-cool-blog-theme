@@ -1,8 +1,55 @@
 ---
 layout: default
 ---
+<section class="pl-5p pb-5p grid grid-cols-2 gap-1 items-center min-h-screen">
+    <div class="bottom-0 pr-10p">
+        <h2 class="font-italiana text-4xl py-5">{{page.title}}</h2>
+        <h3 class="font-montserrat uppercase pb-5">{{page.subtitle}}</h3>
+        <p class="font-montserrat pb-5">{{page.description}}</p>
+        <a href="#" class="uppercase button font-montserrat">Buy now</a>
+    </div>
+    <img src="{{page.product-image}}" class="min-h-screen object-cover">
+</section> 
 
-<!-- product guide hero section -->
+
+
+<!-- what's inside section -->
+<h3 class="font-italiana text-3xl text-center uppercase">What's inside</h3>
+
+<section class="px-10p py-5p">
+    <img src="{{page.inside-image}}" class="object-cover aspect-landscape">
+</section>
+
+
+<!-- table of contents and what's included -->
 <section class="p-5p">
 
-</section>
+    <div class="grid md:grid-cols-3 gap-10 items-top">
+
+        <div class="col-span-2">
+            <h3 class="font-italiana text-2xl uppercase tracking-widest pb-5p">Table of Contents</h3>
+            <ul class="grid divide-y divide-dark-grey border-y border-dark-grey font-montserrat">
+
+                {% for item in page.contents %}
+                <li class="flex justify-between w-full py-5 ">
+                    <p class="mb-0 leading-9 uppercase">{{item.chapter}}</p>
+                    <p class="mb-0 leading-9">Page {{item.page}}</p>
+                </li>
+                {% endfor %}
+
+            </ul>
+        </div>
+
+
+        <div class="">
+            <h3 class="font-italiana text-2xl uppercase tracking-widest pb-5p">What's included</h3>
+            <ul>
+            {% for item in page.whats-inside %}
+                <li>{{ item }}</li>
+            {% endfor %}
+            </ul>
+        </div>
+
+
+    </div>
+ </section>

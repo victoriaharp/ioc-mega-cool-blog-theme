@@ -12,7 +12,7 @@ banner:
 seo: 
     title: Blog | Surf City
     description: 
-    keywords: 
+    keywords: surfing sumbawa indonesia wave
     social_image: 
     hide-from-google: false
 ---
