@@ -1,12 +1,12 @@
 ---
 layout: default
 ---
-<section class="pl-5p pb-5p grid grid-cols-2 gap-1 items-center min-h-screen">
+<section class="p-5p md:pl-5p pb-5p grid md:grid-cols-2 gap-1 items-center min-h-screen">
     <div class="bottom-0 pr-10p">
         <h2 class="font-italiana text-4xl py-5">{{page.title}}</h2>
         <h3 class="font-montserrat uppercase pb-5">{{page.subtitle}}</h3>
         <p class="font-montserrat pb-5">{{page.description}}</p>
-        <a href="#" class="uppercase button font-montserrat">Buy now</a>
+        <a href="#" class="uppercase button font-montserrat mb-5">Buy now</a>
     </div>
     <img src="{{page.product-image}}" class="min-h-screen object-cover">
 </section> 
@@ -16,7 +16,7 @@ layout: default
 <!-- what's inside section -->
 <h3 class="font-italiana text-3xl text-center uppercase">What's inside</h3>
 
-<section class="px-10p py-5p">
+<section class="p-5p">
     <img src="{{page.inside-image}}" class="object-cover aspect-landscape">
 </section>
 
@@ -26,7 +26,7 @@ layout: default
 
     <div class="grid md:grid-cols-3 gap-10 items-top">
 
-        <div class="col-span-2">
+        <div class="col-span-2 md:pr-5p">
             <h3 class="font-italiana text-2xl uppercase tracking-widest pb-5p">Table of Contents</h3>
             <ul class="grid divide-y divide-dark-grey border-y border-dark-grey font-montserrat">
 
@@ -41,13 +41,9 @@ layout: default
         </div>
 
 
-        <div class="">
+        <div class="md:pl-5p">
             <h3 class="font-italiana text-2xl uppercase tracking-widest pb-5p">What's included</h3>
-            <ul>
-            {% for item in page.whats-inside %}
-                <li>{{ item }}</li>
-            {% endfor %}
-            </ul>
+            <p class="editable font-montserrat">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptatem aliquid atque numquam maxime in ad minus unde soluta. Dolorum omnis vitae repellat consectetur nesciunt blanditiis? Magni eius earum dicta.</p>
         </div>
 
 

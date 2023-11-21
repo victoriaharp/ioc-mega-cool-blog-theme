@@ -515,6 +515,9 @@ p{
 .mb-0{
   margin-bottom: 0px;
 }
+.mb-5{
+  margin-bottom: 1.25rem;
+}
 .inline-block{
   display: inline-block;
 }
@@ -874,6 +877,14 @@ p{
 
   .md\:pt-0{
     padding-top: 0px;
+  }
+
+  .md\:pr-5p{
+    padding-right: 5%;
+  }
+
+  .md\:pl-5p{
+    padding-left: 5%;
   }
 
   .md\:text-left{
