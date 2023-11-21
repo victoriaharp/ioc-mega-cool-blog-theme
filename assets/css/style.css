@@ -348,6 +348,25 @@ p{
   margin-bottom: 0.5em;
   line-height: 1.5;
 }
+.content h2, 
+    .content h3{
+  padding-bottom: 1.25rem;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+}
+.content p{
+  padding-bottom: 1.25rem;
+  text-align: center;
+}
+.content blockquote{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 36rem;
+  text-align: center;
+  font-family: Italiana, sans-serif;
+  font-size: 2.25rem;
+  line-height: 1;
+}
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -477,9 +496,6 @@ p{
 .mb-0{
   margin-bottom: 0px;
 }
-.block{
-  display: block;
-}
 .inline-block{
   display: inline-block;
 }
@@ -510,9 +526,6 @@ p{
 .min-h-50{
   min-height: 50vh;
 }
-.min-h-\[0vh\]{
-  min-height: 0vh;
-}
 .min-h-\[50vh\]{
   min-height: 50vh;
 }
@@ -524,9 +537,6 @@ p{
 }
 .max-w-xl{
   max-width: 36rem;
-}
-.max-w-2xl{
-  max-width: 42rem;
 }
 .shrink-0{
   flex-shrink: 0;
@@ -631,6 +641,9 @@ p{
 .p-5{
   padding: 1.25rem;
 }
+.p-1{
+  padding: 0.25rem;
+}
 .p-8{
   padding: 2rem;
 }
@@ -642,12 +655,6 @@ p{
 }
 .p-5p{
   padding: 5%;
-}
-.p-3{
-  padding: 0.75rem;
-}
-.p-1{
-  padding: 0.25rem;
 }
 .px-5{
   padding-left: 1.25rem;
@@ -686,8 +693,8 @@ p{
 .pr-0{
   padding-right: 0px;
 }
-.pl-10p{
-  padding-left: 10%;
+.pr-50p{
+  padding-right: 50%;
 }
 .text-left{
   text-align: left;
@@ -732,9 +739,8 @@ p{
   font-size: 1.5rem;
   line-height: 1.2;
 }
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
+.text-\[4vw\]{
+  font-size: 4vw;
 }
 .uppercase{
   text-transform: uppercase;
