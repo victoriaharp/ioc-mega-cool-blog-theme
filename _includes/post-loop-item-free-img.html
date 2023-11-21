@@ -17,11 +17,14 @@
         
     
     <div class="p-2">
-        <div class="grid grid-cols-2 justify-between py-3">
-            <h4 class="uppercase font-montserrat"> {{post.title}} </h4>
-            <h4 class="font-montserrat text-right"> {{post.date | date_to_long_string}} </h4>
+        <div class="grid md:grid-cols-2 justify-between py-3">
+            <h4 class="uppercase text-left font-montserrat"> {{post.title}} </h4>
+            <h4 class="font-montserrat text-left md:text-right text-sm md:text-base"> {{post.date | date_to_long_string}} </h4>
         </div>
         <p class="font-montserrat line-clamp-4"> {{post.description}} </p>
-        <a href="{{post.url}}" class="uppercase font-italiana border-b border-dark-grey">  Read More </a>  
+        
+        <div class="text-right">
+            <a href="{{post.url}}" class="uppercase font-italiana border-b border-dark-grey">  Read More </a>  
+        </div>
     </div>
 </div>

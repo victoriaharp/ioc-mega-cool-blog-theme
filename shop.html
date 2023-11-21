@@ -1,0 +1,18 @@
+---
+layout: default
+banner:
+    image: /images/blog-bg-17.jpg
+    supheading: shop our
+    heading: Curated Collection
+    subheading: Shopping our travel guides and presets teaches you to appreciate the finer things in life, to be present, live in the moment, and just breathe.
+---
+{% include hero-banner.html %}
+
+<section>
+    <h3 class="font-italiana">Travel Guides</h3>
+
+{{ for item in page.travel-guide }}
+    
+{{ endfor }}
+
+</section>
