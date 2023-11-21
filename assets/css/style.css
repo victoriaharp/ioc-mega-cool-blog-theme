@@ -525,6 +525,9 @@ p{
 .max-w-xl{
   max-width: 36rem;
 }
+.max-w-2xl{
+  max-width: 42rem;
+}
 .shrink-0{
   flex-shrink: 0;
 }
@@ -683,6 +686,9 @@ p{
 .pr-0{
   padding-right: 0px;
 }
+.pl-10p{
+  padding-left: 10%;
+}
 .text-left{
   text-align: left;
 }
@@ -725,6 +731,10 @@ p{
 .text-2xl{
   font-size: 1.5rem;
   line-height: 1.2;
+}
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 .uppercase{
   text-transform: uppercase;
