@@ -1,0 +1,43 @@
+---
+layout: default
+---
+{% include product-hero-banner.html %}
+
+<!-- before and after section -->
+
+<section class="p-5p grid md:grid-cols-3 gap-5 items-center bg-light-grey">
+    <img src="{{page.inside-image}}" class="col-span-2 object-cover aspect-landscape order-first md:order-last">
+    <div class="order-last md:order-first">
+        <h3 class="font-italiana uppercase text-2xl">Before & After</h3>
+        <p class="font-montserrat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus optio explicabo adipisci animi quidem consectetur rem! Recusandae odio deserunt quod soluta, veniam, omnis quos rem voluptas, quis officia aperiam saepe?</p>
+    </div>
+</section>
+
+<!-- how to use presets -->
+<section class="p-5p grid md:grid-cols-3 gap-5 items-center ">
+    <div class="">
+        <h3 class="font-italiana uppercase text-2xl">How to use your presets</h3>
+        <p class="font-montserrat editable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus optio explicabo adipisci animi quidem consectetur rem! Recusandae odio deserunt quod soluta, veniam, omnis quos rem voluptas, quis officia aperiam saepe?</p>
+    </div>
+    <img src="{{page.how-to-image}}" class="md:col-span-2 object-cover aspect-landscape">
+</section>
+
+
+<!-- FAQs -->
+<section class="p-5p bg-light-grey">
+
+    <h3 class="font-italiana text-2xl uppercase tracking-widest pb-5p">FAQs</h3>
+            <ul class="grid divide-y divide-dark-grey border-y border-dark-grey font-montserrat">
+                {% for item in page.faq %}
+                <li class="flex justify-between w-full py-5 ">
+                    <p class="mb-0 leading-9 uppercase">{{item}}</p>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+</section>
+
+ <!-- this is a placeholder section to later add the related posts -->
+ <section class="p-8"> 
+    <p> Add related products include here later </p>
+</section>

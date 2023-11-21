@@ -1,20 +1,10 @@
 ---
 layout: default
 ---
-<section class="p-5p md:pl-5p pb-5p grid md:grid-cols-2 gap-1 items-center min-h-screen">
-    <div class="bottom-0 pr-10p">
-        <h2 class="font-italiana text-4xl py-5">{{page.title}}</h2>
-        <h3 class="font-montserrat uppercase pb-5">{{page.subtitle}}</h3>
-        <p class="font-montserrat pb-5">{{page.description}}</p>
-        <a href="#" class="uppercase button font-montserrat mb-5">Buy now</a>
-    </div>
-    <img src="{{page.product-image}}" class="min-h-screen object-cover">
-</section> 
-
-
+{% include product-hero-banner.html %}
 
 <!-- what's inside section -->
-<h3 class="font-italiana text-3xl text-center uppercase">What's inside</h3>
+<h3 class="font-italiana text-3xl text-left md:text-center uppercase pl-5p md:pl-0">What's inside</h3>
 
 <section class="p-5p">
     <img src="{{page.inside-image}}" class="object-cover aspect-landscape">
@@ -22,7 +12,7 @@ layout: default
 
 
 <!-- table of contents and what's included -->
-<section class="p-5p">
+<section class="p-5p bg-light-grey">
 
     <div class="grid md:grid-cols-3 gap-10 items-top">
 
@@ -53,6 +43,6 @@ layout: default
 
 
  <!-- this is a placeholder section to later add the related posts -->
-<section class="p-8 bg-stone-200"> 
+<section class="p-8"> 
     <p> Add related products include here later </p>
 </section>

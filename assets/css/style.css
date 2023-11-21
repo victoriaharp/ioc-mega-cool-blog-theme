@@ -502,6 +502,9 @@ p{
 .order-last{
   order: 9999;
 }
+.order-first{
+  order: -9999;
+}
 .col-span-2{
   grid-column: span 2 / span 2;
 }
@@ -547,6 +550,12 @@ p{
 }
 .max-h-80{
   max-height: 80vh;
+}
+.max-h-50{
+  max-height: 50vh;
+}
+.max-h-\[50vh\]{
+  max-height: 50vh;
 }
 .min-h-\[90vh\]{
   min-height: 90vh;
@@ -802,6 +811,14 @@ p{
 .text-\[4vw\]{
   font-size: 4vw;
 }
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+.text-7xl{
+  font-size: 4.5rem;
+  line-height: 1;
+}
 .uppercase{
   text-transform: uppercase;
 }
@@ -835,6 +852,14 @@ p{
 
   .md\:order-first{
     order: -9999;
+  }
+
+  .md\:order-last{
+    order: 9999;
+  }
+
+  .md\:col-span-2{
+    grid-column: span 2 / span 2;
   }
 
   .md\:flex{
@@ -887,8 +912,16 @@ p{
     padding-left: 5%;
   }
 
+  .md\:pl-0{
+    padding-left: 0px;
+  }
+
   .md\:text-left{
     text-align: left;
+  }
+
+  .md\:text-center{
+    text-align: center;
   }
 
   .md\:text-right{
@@ -898,6 +931,11 @@ p{
   .md\:text-base{
     font-size: 1rem;
     line-height: 1.2;
+  }
+
+  .md\:text-8xl{
+    font-size: 6rem;
+    line-height: 1;
   }
 }
 
