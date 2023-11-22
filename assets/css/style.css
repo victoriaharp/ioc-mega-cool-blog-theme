@@ -384,6 +384,15 @@ p{
   font-size: 3rem;
   line-height: 1;
 }
+/* memberspace special styling */
+#memberspace-login-form input {
+        border: 2px solid blue;
+       }
+#memberspace-login-form label {
+           border: 2px solid yellow;
+       }
+/* Forgot Email / forgot password text */
+.MemberSpaceWidgetInternal__BrandedInterface_footer {display: none; }
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -525,6 +534,12 @@ p{
 .col-span-2{
   grid-column: span 2 / span 2;
 }
+.col-span-1{
+  grid-column: span 1 / span 1;
+}
+.col-span-3{
+  grid-column: span 3 / span 3;
+}
 .m-4{
   margin: 1rem;
 }
@@ -537,6 +552,9 @@ p{
 }
 .mb-5{
   margin-bottom: 1.25rem;
+}
+.block{
+  display: block;
 }
 .inline-block{
   display: inline-block;
@@ -577,6 +595,9 @@ p{
 .min-h-50{
   min-height: 50vh;
 }
+.min-h-\[40vh\]{
+  min-height: 40vh;
+}
 .min-h-\[50vh\]{
   min-height: 50vh;
 }
@@ -614,6 +635,12 @@ p{
 }
 .grid-cols-6{
   grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid-cols-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .flex-nowrap{
   flex-wrap: nowrap;
@@ -657,6 +684,9 @@ p{
 }
 .border-t{
   border-top-width: 1px;
+}
+.border-b-2{
+  border-bottom-width: 2px;
 }
 .border-transparent{
   border-color: transparent;

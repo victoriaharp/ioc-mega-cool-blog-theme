@@ -67,6 +67,32 @@ html {
     .sidebar-content blockquote p{
         @apply text-5xl font-italiana text-left ;
     }
+
+
+    /* memberspace special styling */
+    #memberspace-login-form input {
+        border: 2px solid blue;
+       }
+       
+       #memberspace-login-form label {
+           border: 2px solid yellow;
+       }
+       
+       /* Forgot Email / forgot password text */
+       #memberspace-login-form .MemberSpaceWidgetInternal__InputWrapper_labelRight {
+           color: green;
+       }
+       
+       
+       #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-primary {
+           color: red;
+       }
+       
+       #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-secondary {
+           color: blue;
+       }
+        
+       .MemberSpaceWidgetInternal__BrandedInterface_footer {display: none; }
   }
 
 
