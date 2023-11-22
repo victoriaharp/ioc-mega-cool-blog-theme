@@ -617,6 +617,9 @@ p{
 .min-h-\[50vh\]{
   min-height: 50vh;
 }
+.min-h-90{
+  min-height: 90vh;
+}
 .w-full{
   width: 100%;
 }
@@ -859,6 +862,12 @@ p{
 }
 .leading-9{
   line-height: 2.25rem;
+}
+.leading-7{
+  line-height: 1.75rem;
+}
+.leading-6{
+  line-height: 1.5rem;
 }
 .tracking-widest{
   letter-spacing: 0.1em;
