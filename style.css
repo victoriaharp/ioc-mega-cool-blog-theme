@@ -13,11 +13,6 @@ html {
   scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
 }
 
-/* ----------- Import Tailwind -----*/
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 
 /* ----------- Default Styles to apply to the whole project  --------- */
 
@@ -97,6 +92,7 @@ html {
        #memberspace-section #memberspace-login-form .MemberSpaceWidgetInternal__InputWrapper_labelRight {
            @apply focus:outline-none;
        
+       }
        
        #memberspace-section #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-primary {
            @apply text-xs focus:outline-none;

@@ -3,17 +3,6 @@
 /* Looking for the color variables? They have been moved to the inline-styles file in the _includes folder, and pull variables from the site-settings folder in the _data folder.  */
 
 /* Tailwind */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Custom CSS */
-
-html {
-  scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
-}
-
-/* ----------- Import Tailwind -----*/
 /* ! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com */
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -323,42 +312,42 @@ video {
 [hidden] {
   display: none;
 }
-h1, h2, h3, h4{
+h1, h2, h3, h4 {
   margin-bottom: 0.5em;
   font-family: proxima-nova, ui-sans-serif;
 }
-h1{
+h1 {
   font-size: 1.875rem;
   line-height: .85;
 }
-h2{
+h2 {
   font-size: 1.5rem;
   line-height: .85;
 }
-h3{
+h3 {
   font-size: 1.25rem;
   font-size: 1.125rem;;
   line-height: .85;
 }
-h4{
+h4 {
   font-size: 1.125rem;;
   line-height: .85;
 }
-p{
+p {
   margin-bottom: 0.5em;
   line-height: 1.5;
 }
 .content h2, 
-    .content h3{
+    .content h3 {
   padding-bottom: 1.25rem;
   font-family: Montserrat, sans-serif;
   text-transform: uppercase;
 }
-.content p{
+.content p {
   padding-bottom: 1.25rem;
   text-align: center;
 }
-.content blockquote{
+.content blockquote {
   margin-left: auto;
   margin-right: auto;
   max-width: 36rem;
@@ -368,17 +357,17 @@ p{
   line-height: 1;
 }
 .sidebar-content h2, 
-    .sidebar-content h3{
+    .sidebar-content h3 {
   padding-bottom: 1.25rem;
   font-family: Montserrat, sans-serif;
   text-transform: uppercase;
 }
-.sidebar-content p{
+.sidebar-content p {
   padding-bottom: 1.25rem;
   text-align: left;
   font-family: Montserrat, sans-serif;
 }
-.sidebar-content blockquote p{
+.sidebar-content blockquote p {
   text-align: left;
   font-family: Italiana, sans-serif;
   font-size: 3rem;
@@ -388,7 +377,7 @@ p{
 ms-css-seed-with-revert :not(svg):not(g):not(path):not(circle):not(ellipse):not(rect):not(line):not(polyline):not(polygon):not(stop):not(iframe) {
         width: initial !important;
     }
-#memberspace-section #memberspace-login-form input{
+#memberspace-section #memberspace-login-form input {
   width: 100%;
   border-radius: 0px;
   border-width: 0px;
@@ -396,21 +385,21 @@ ms-css-seed-with-revert :not(svg):not(g):not(path):not(circle):not(ellipse):not(
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
-#memberspace-section #memberspace-login-form label{
+#memberspace-section #memberspace-login-form label {
   font-family: Montserrat, sans-serif;
   font-weight: 200;
   text-transform: uppercase;
 }
-#memberspace-section #memberspace-login-form ms-widget-ui{
+#memberspace-section #memberspace-login-form ms-widget-ui {
   display: block;
   justify-content: flex-start;
 }
-#memberspace-login-form{
+#memberspace-login-form {
   padding: 5%;
 }
 /* Forgot Email / forgot password text */
 .MemberSpaceWidgetInternal__BrandedInterface_footer {display: none; }
-*, ::before, ::after{
+*, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -456,7 +445,7 @@ ms-css-seed-with-revert :not(svg):not(g):not(path):not(circle):not(ellipse):not(
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-::backdrop{
+::backdrop {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -502,7 +491,7 @@ ms-css-seed-with-revert :not(svg):not(g):not(path):not(circle):not(ellipse):not(
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-.button{
+.button {
   display: inline-block;
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
@@ -521,365 +510,386 @@ ms-css-seed-with-revert :not(svg):not(g):not(path):not(circle):not(ellipse):not(
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 4;
     }
-.absolute{
+.absolute {
   position: absolute;
 }
-.relative{
+.relative {
   position: relative;
 }
-.inset-0{
+.inset-0 {
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
 }
-.bottom-0{
+.bottom-0 {
   bottom: 0px;
 }
-.left-0{
+.left-0 {
   left: 0px;
 }
-.bottom-20p{
+.bottom-20p {
   bottom: 20%;
 }
-.order-last{
+.order-last {
   order: 9999;
 }
-.order-first{
+.order-first {
   order: -9999;
 }
-.col-span-2{
+.col-span-2 {
   grid-column: span 2 / span 2;
 }
-.col-span-1{
+.col-span-1 {
   grid-column: span 1 / span 1;
 }
-.col-span-3{
+.col-span-3 {
   grid-column: span 3 / span 3;
 }
-.m-4{
+.m-4 {
   margin: 1rem;
 }
-.mx-auto{
+.mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
-.mb-0{
+.mb-0 {
   margin-bottom: 0px;
 }
-.mb-5{
+.mb-5 {
   margin-bottom: 1.25rem;
 }
-.block{
+.mt-5p {
+  margin-top: 5%;
+}
+.block {
   display: block;
 }
-.inline-block{
+.inline-block {
   display: inline-block;
 }
-.flex{
+.flex {
   display: flex;
 }
-.table{
+.table {
   display: table;
 }
-.grid{
+.grid {
   display: grid;
 }
-.contents{
+.contents {
   display: contents;
 }
-.hidden{
+.hidden {
   display: none;
 }
-.aspect-square{
+.aspect-square {
   aspect-ratio: 1 / 1;
 }
-.aspect-landscape{
+.aspect-landscape {
   aspect-ratio: 3 / 2;
 }
-.h-full{
+.h-full {
   height: 100%;
 }
-.max-h-80{
+.max-h-80 {
   max-height: 80vh;
 }
-.min-h-\[90vh\]{
+.max-h-90 {
+  max-height: 90vh;
+}
+.min-h-\[90vh\] {
   min-height: 90vh;
 }
-.min-h-screen{
+.min-h-screen {
   min-height: 100vh;
 }
-.min-h-50{
+.min-h-50 {
   min-height: 50vh;
 }
-.min-h-80{
+.min-h-80 {
   min-height: 80vh;
 }
-.min-h-90{
+.min-h-90 {
   min-height: 90vh;
 }
-.min-h-\[40vh\]{
+.min-h-\[40vh\] {
   min-height: 40vh;
 }
-.min-h-\[50vh\]{
+.min-h-\[50vh\] {
   min-height: 50vh;
 }
-.w-full{
+.w-full {
   width: 100%;
 }
-.w-96{
+.w-96 {
   width: 24rem;
 }
-.max-w-xl{
+.max-w-xl {
   max-width: 36rem;
 }
-.shrink-0{
+.shrink-0 {
   flex-shrink: 0;
 }
-.basis-60p{
+.basis-60p {
   flex-basis: 60%;
 }
-.basis-90p{
+.basis-90p {
   flex-basis: 90%;
 }
-.columns-2{
+.basis-30p {
+  flex-basis: 30%;
+}
+.columns-2 {
   -moz-columns: 2;
        columns: 2;
 }
-.break-inside-avoid{
+.break-inside-avoid {
   -moz-column-break-inside: avoid;
        break-inside: avoid;
 }
-.grid-cols-3{
+.grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
-.grid-cols-6{
+.grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
-.grid-cols-2{
+.grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-.grid-cols-4{
+.grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
-.flex-nowrap{
+.flex-nowrap {
   flex-wrap: nowrap;
 }
-.items-center{
+.items-center {
   align-items: center;
 }
-.justify-between{
+.justify-between {
   justify-content: space-between;
 }
-.gap-1{
+.gap-1 {
   gap: 0.25rem;
 }
-.gap-2{
+.gap-2 {
   gap: 0.5rem;
 }
-.gap-10{
+.gap-10 {
   gap: 2.5rem;
 }
-.gap-5{
+.gap-5 {
   gap: 1.25rem;
 }
-.divide-y > :not([hidden]) ~ :not([hidden]){
+.divide-y > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
   border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
   border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
 }
-.divide-dark-grey > :not([hidden]) ~ :not([hidden]){
+.divide-dark-grey > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
   border-color: rgb(30 30 30 / var(--tw-divide-opacity));
 }
-.overflow-x-scroll{
+.overflow-x-scroll {
   overflow-x: scroll;
 }
-.border-y{
+.border-y {
   border-top-width: 1px;
   border-bottom-width: 1px;
 }
-.border-b{
+.border-b {
   border-bottom-width: 1px;
 }
-.border-t{
+.border-t {
   border-top-width: 1px;
 }
-.border-b-2{
+.border-b-2 {
   border-bottom-width: 2px;
 }
-.border-transparent{
+.border-transparent {
   border-color: transparent;
 }
-.border-dark-grey{
+.border-dark-grey {
   --tw-border-opacity: 1;
   border-color: rgb(30 30 30 / var(--tw-border-opacity));
 }
-.bg-light-grey{
+.bg-light-grey {
   --tw-bg-opacity: 1;
   background-color: rgb(242 239 236 / var(--tw-bg-opacity));
 }
-.bg-white{
+.bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-stone-200{
+.bg-stone-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(231 229 228 / var(--tw-bg-opacity));
 }
-.bg-\[url\(\'\/images\/blog-bg-14\.jpg\'\)\]{
+.bg-\[url\(\'\/images\/blog-bg-14\.jpg\'\)\] {
   background-image: url('/images/blog-bg-14.jpg');
 }
-.bg-cover{
+.bg-cover {
   background-size: cover;
 }
-.bg-center{
+.bg-center {
   background-position: center;
 }
-.object-cover{
+.object-cover {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.p-2{
+.p-2 {
   padding: 0.5rem;
 }
-.p-5p{
+.p-5p {
   padding: 5%;
 }
-.p-5{
+.p-5 {
   padding: 1.25rem;
 }
-.p-1{
+.p-1 {
   padding: 0.25rem;
 }
-.p-8{
+.p-8 {
   padding: 2rem;
 }
-.p-4{
+.p-4 {
   padding: 1rem;
 }
-.px-5{
+.px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
-.py-5{
+.py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
-.py-3{
+.py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
-.px-15p{
+.px-15p {
   padding-left: 15%;
   padding-right: 15%;
 }
-.py-5p{
+.py-5p {
   padding-top: 5%;
   padding-bottom: 5%;
 }
-.py-2{
+.py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.pt-5{
+.pt-5 {
   padding-top: 1.25rem;
 }
-.pl-5p{
+.pl-5p {
   padding-left: 5%;
 }
-.pb-5{
+.pb-5 {
   padding-bottom: 1.25rem;
 }
-.pb-5p{
+.pb-5p {
   padding-bottom: 5%;
 }
-.pr-10p{
+.pr-10p {
   padding-right: 10%;
 }
-.pt-2{
+.pt-2 {
   padding-top: 0.5rem;
 }
-.pl-1{
+.pl-1 {
   padding-left: 0.25rem;
 }
-.pr-5{
+.pr-5 {
   padding-right: 1.25rem;
 }
-.pr-0{
+.pr-0 {
   padding-right: 0px;
 }
-.pr-50p{
+.pr-50p {
   padding-right: 50%;
 }
-.text-left{
+.pl-15p {
+  padding-left: 15%;
+}
+.pr-5p {
+  padding-right: 5%;
+}
+.text-left {
   text-align: left;
 }
-.text-center{
+.text-center {
   text-align: center;
 }
-.text-right{
+.text-right {
   text-align: right;
 }
-.font-italiana{
+.font-italiana {
   font-family: Italiana, sans-serif;
 }
-.font-montserrat{
+.font-montserrat {
   font-family: Montserrat, sans-serif;
 }
-.text-3xl{
+.text-3xl {
   font-size: 1.875rem;
   line-height: 1;
 }
-.text-sm{
+.text-sm {
   font-size: 0.875rem;;
   line-height: 1.2;
 }
-.text-base{
+.text-base {
   font-size: 1rem;
   line-height: 1.2;
 }
-.text-7xl{
+.text-7xl {
   font-size: 4.5rem;
   line-height: 1;
 }
-.text-4xl{
+.text-4xl {
   font-size: 2.25rem;
   line-height: 1;
 }
-.text-lg{
+.text-lg {
   font-size: 1.125rem;;
   line-height: 1.2;
 }
-.text-2xl{
+.text-2xl {
   font-size: 1.5rem;
   line-height: 1.2;
 }
-.text-\[4vw\]{
+.text-\[4vw\] {
   font-size: 4vw;
 }
-.font-light{
+.font-light {
   font-weight: 300;
 }
-.uppercase{
+.uppercase {
   text-transform: uppercase;
 }
-.leading-9{
+.leading-9 {
   line-height: 2.25rem;
 }
-.leading-6{
+.leading-6 {
   line-height: 1.5rem;
 }
-.tracking-widest{
+.tracking-widest {
   letter-spacing: 0.1em;
 }
-.text-dark-grey{
+.text-dark-grey {
   --tw-text-opacity: 1;
   color: rgb(30 30 30 / var(--tw-text-opacity));
 }
-.text-white{
+.text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/* Custom CSS */
+
+html {
+  scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
 }
 
 
@@ -888,99 +898,77 @@ ms-css-seed-with-revert :not(svg):not(g):not(path):not(circle):not(ellipse):not(
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
-.hover\:border-white:hover{
+.hover\:border-white:hover {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-@media (min-width: 768px){
-
-  .md\:order-first{
+@media (min-width: 768px) {
+  .md\:order-first {
     order: -9999;
   }
-
-  .md\:order-last{
+  .md\:order-last {
     order: 9999;
   }
-
-  .md\:col-span-2{
+  .md\:col-span-2 {
     grid-column: span 2 / span 2;
   }
-
-  .md\:flex{
+  .md\:flex {
     display: flex;
   }
-
-  .md\:basis-30p{
+  .md\:basis-30p {
     flex-basis: 30%;
   }
-
-  .md\:basis-45p{
+  .md\:basis-45p {
     flex-basis: 45%;
   }
-
-  .md\:columns-3{
+  .md\:columns-3 {
     -moz-columns: 3;
          columns: 3;
   }
-
-  .md\:grid-cols-2{
+  .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
-  .md\:grid-cols-3{
+  .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-
-  .md\:justify-between{
+  .md\:justify-between {
     justify-content: space-between;
   }
-
-  .md\:p-5p{
+  .md\:p-5p {
     padding: 5%;
   }
-
-  .md\:px-10{
+  .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
-
-  .md\:pt-0{
+  .md\:pt-0 {
     padding-top: 0px;
   }
-
-  .md\:pl-5p{
+  .md\:pl-5p {
     padding-left: 5%;
   }
-
-  .md\:pl-0{
+  .md\:pl-0 {
     padding-left: 0px;
   }
-
-  .md\:pr-5p{
+  .md\:pr-5p {
     padding-right: 5%;
   }
-
-  .md\:text-left{
+  .md\:text-left {
     text-align: left;
   }
-
-  .md\:text-center{
+  .md\:text-center {
     text-align: center;
   }
-
-  .md\:text-right{
+  .md\:text-right {
     text-align: right;
   }
-
-  .md\:text-8xl{
+  .md\:text-8xl {
     font-size: 6rem;
     line-height: 1;
   }
-
-  .md\:text-base{
+  .md\:text-base {
     font-size: 1rem;
     line-height: 1.2;
   }
 }
-
