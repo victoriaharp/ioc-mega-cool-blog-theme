@@ -385,13 +385,22 @@ p{
   line-height: 1;
 }
 /* memberspace special styling */
-#memberspace-section #memberspace-login-form input {
-        border: 2px solid blue;
-       }
-#memberspace-section #memberspace-login-form label {
-           border: 2px solid yellow;
-       }
+#memberspace-section #memberspace-login-form input{
+  border-width: 0px;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+#memberspace-section #memberspace-login-form label{
+  padding: 5%;
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
 /* Forgot Email / forgot password text */
+#memberspace-section #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-primary {
+           color: red;
+       }
 .MemberSpaceWidgetInternal__BrandedInterface_footer {display: none; }
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
@@ -504,6 +513,9 @@ p{
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 4;
     }
+.invisible{
+  visibility: hidden;
+}
 .absolute{
   position: absolute;
 }
@@ -559,6 +571,9 @@ p{
 .inline-block{
   display: inline-block;
 }
+.inline{
+  display: inline;
+}
 .flex{
   display: flex;
 }
@@ -595,11 +610,11 @@ p{
 .min-h-50{
   min-height: 50vh;
 }
-.min-h-\[40vh\]{
-  min-height: 40vh;
-}
 .min-h-80{
   min-height: 80vh;
+}
+.min-h-\[40vh\]{
+  min-height: 40vh;
 }
 .min-h-\[50vh\]{
   min-height: 50vh;
@@ -621,6 +636,9 @@ p{
 }
 .basis-90p{
   flex-basis: 90%;
+}
+.resize{
+  resize: both;
 }
 .columns-2{
   -moz-columns: 2;
@@ -674,6 +692,9 @@ p{
 }
 .overflow-x-scroll{
   overflow-x: scroll;
+}
+.border{
+  border-width: 1px;
 }
 .border-y{
   border-top-width: 1px;
@@ -837,6 +858,9 @@ p{
 }
 .text-\[4vw\]{
   font-size: 4vw;
+}
+.font-light{
+  font-weight: 300;
 }
 .uppercase{
   text-transform: uppercase;

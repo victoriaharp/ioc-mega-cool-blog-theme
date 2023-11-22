@@ -71,11 +71,11 @@ html {
 
     /* memberspace special styling */
     #memberspace-section #memberspace-login-form input {
-        border: 2px solid blue;
+        @apply border-0 border-b border-black;
        }
        
        #memberspace-section #memberspace-login-form label {
-           border: 2px solid yellow;
+        @apply p-5p font-montserrat uppercase font-light;
        }
        
        /* Forgot Email / forgot password text */
