@@ -399,6 +399,7 @@ p{
 }
 #memberspace-section #memberspace-login-form ms-widget-ui{
   display: block;
+  justify-content: flex-start;
 }
 #memberspace-section #memberspace-login-form div{
   padding: 5%;

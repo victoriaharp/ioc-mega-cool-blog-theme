@@ -82,7 +82,7 @@ html {
        }
 
        #memberspace-section #memberspace-login-form ms-widget-ui  {
-        @apply block;
+        @apply block justify-start;
        }
        #memberspace-section #memberspace-login-form div{
         @apply p-5p;
