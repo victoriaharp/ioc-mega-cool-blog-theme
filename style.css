@@ -96,11 +96,11 @@ html {
        
        
        #memberspace-section #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-primary {
-           color: red;
+           @apply text-xs
        }
        
        #memberspace-section #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-secondary {
-           color: blue;
+           @apply text-xs
        }
         
        .MemberSpaceWidgetInternal__BrandedInterface_footer {display: none; }
