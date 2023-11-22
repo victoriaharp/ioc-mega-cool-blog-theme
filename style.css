@@ -71,7 +71,7 @@ html {
 
     /* memberspace special styling */
     #memberspace-section #memberspace-login-form input {
-        @apply border-0 border-b border-black rounded-none;
+        @apply border-0 border-b border-black rounded-none w-full;
        }
        
        #memberspace-section #memberspace-login-form label {

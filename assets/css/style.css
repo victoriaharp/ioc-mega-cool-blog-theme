@@ -386,6 +386,7 @@ p{
 }
 /* memberspace special styling */
 #memberspace-section #memberspace-login-form input{
+  width: 100%;
   border-radius: 0px;
   border-width: 0px;
   border-bottom-width: 1px;
