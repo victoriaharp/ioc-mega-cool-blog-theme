@@ -95,16 +95,15 @@ html {
 
        /* Forgot Email / forgot password text */
        #memberspace-section #memberspace-login-form .MemberSpaceWidgetInternal__InputWrapper_labelRight {
-           color: green;
-       }
+           @apply focus:outline-none focus:ring focus:ring-violet-300
        
        
        #memberspace-section #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-primary {
-           @apply text-xs
+           @apply text-xs focus:outline-none focus:ring focus:ring-violet-300
        }
        
        #memberspace-section #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-secondary {
-           @apply text-xs
+           @apply text-xs focus:outline-none focus:ring focus:ring-violet-300
        }
         
        .MemberSpaceWidgetInternal__BrandedInterface_footer {display: none; }
