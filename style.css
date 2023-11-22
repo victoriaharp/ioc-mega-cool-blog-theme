@@ -57,6 +57,16 @@ html {
     .content blockquote{
         @apply text-5xl font-italiana text-center max-w-xl mx-auto;
     }
+    .sidebar-content h2, 
+    .sidebar-content h3 {
+        @apply uppercase font-montserrat pb-5;
+    }
+    .sidebar-content p {
+        @apply text-left pb-5 font-montserrat;
+    }
+    .sidebar-content blockquote p{
+        @apply text-5xl font-italiana text-left ;
+    }
   }
 
 

@@ -4,10 +4,17 @@ layout: default
 {% include product-hero-banner.html %}
 
 <!-- what's inside section -->
-<h3 class="font-italiana text-3xl text-left md:text-center uppercase pl-5p md:pl-0">What's inside</h3>
+<section>
+    <h3 class="font-italiana text-3xl text-left md:text-center uppercase pl-5p md:pl-0">What's inside</h3>
 
-<section class="p-5p">
-    <img src="{{page.inside-image}}" class="object-cover aspect-landscape">
+    <div class="p-5p">
+        <img src="{{page.inside-image}}" class="object-cover aspect-landscape">
+        <div class="grid grid-cols-6 gap-2 pt-2">
+            {% for item in page.gallery %}
+                <img src="{{item.image-path}}" class="inset-0 w-full h-full object-cover" alt="{{item.alt}}">
+            {% endfor %}
+        </div>
+    </div>
 </section>
 
 
@@ -43,6 +50,26 @@ layout: default
 
 
  <!-- this is a placeholder section to later add the related posts -->
-<section class="p-8"> 
-    <p> Add related products include here later </p>
+<section class="p-5p">
+ {% if item.type == "Travel Guide" %}
+ <a href="{{item.url}}" class="bg-white">
+    <img src="{{item.product-image}}" class="aspect-square object-cover">
+    <div class="p-5">
+        {% if include.type %}
+        <p class="font-montserrat bg-light-grey uppercase inline-block p-1 text-sm">{{include.type}}</p>
+        {% endif %}
+        <h4 class="font-montserrat text-lg uppercase">{{item.title}}</h4>
+        <p class="font-montserrat text-sm">{{item.description}}</p>
+
+        {% assign cent-check = item.price | modulo: 100 %}
+        <p class="font-montserrat text-sm">
+            {% if cent-check > 1 %}
+            ${{item.price | divided_by: 100.00}}
+            {% else %}
+            ${{item.price | divided_by: 100}}
+            {% endif %}
+        </p>
+    </div>
+</a>
+{% endif %}
 </section>

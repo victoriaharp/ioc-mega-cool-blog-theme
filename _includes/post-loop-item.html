@@ -1,16 +1,3 @@
-<!-- <div>
-	
-	<div class="bg-cover aspect-square relative">
-        <img src="{{ post.featured_image }}" alt="{{post.title}}" class="absolute inset-0 w-full h-full object-cover">
-    </div>
-    
-    <div class="p-2">
-    	<h4> {{post.title}} </h4>
-    	<p> {{post.description | truncatewords: 30 }}  </p>
-    	<a href="{{post.url}}">  Read More </a>  
-    </div>
-    
-</div> -->
 <div class="{% if post.aspect-ratio == 'aspect-square' %} basis-60p md:basis-30p {% else %} basis-90p md:basis-45p {% endif %} shrink-0 relative pb-5 break-inside-avoid">
     <div class="bg-cover relative {{ post.aspect-ratio }}">
         <img src="{{ post.featured_image }}" alt="{{post.title}}"class="absolute inset-0 w-full h-full object-cover ">

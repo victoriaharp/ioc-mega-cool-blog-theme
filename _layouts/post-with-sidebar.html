@@ -2,25 +2,25 @@
 layout: default
 ---
 
-<section class="p-8 bg-stone-100">  
-	<h1> {{page.title}} </h1>
-	<p> By {{page.author}} </p>
+<section class="p-8">  
+	<h1 class="font-italiana"> {{page.title}} </h1>
+	<p class="font-montserrat"> By {{page.author}} </p>
 </section>
 
-<section class="p-8 md:flex">
+<section class="p-8 md:flex sidebar-content">
 
 	<!-- This div holds the main blog content --> 
-	<div class="p-4 m-4">
+	<div class="p-4 m-4 sidebar-content">
 		{{ content }}
 	</div>
 	
 	<!-- and this div holds our sidebar -->
 	<div class="w-96 shrink-0">
 	
-		<div class="p-4 m-4 bg-stone-300"> 
+		<div class="p-4 m-4 bg-light-grey"> 
 			<p> This is a little box on the sidebar </p> 
 		</div>
-		<div class="p-4 m-4 bg-stone-300"> 
+		<div class="p-4 m-4 bg-light-grey"> 
 			<p> This is another little box on the sidebar </p> 
 		</div>
 		
