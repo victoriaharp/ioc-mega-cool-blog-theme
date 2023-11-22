@@ -386,6 +386,7 @@ p{
 }
 /* memberspace special styling */
 #memberspace-section #memberspace-login-form input{
+  border-radius: 0px;
   border-width: 0px;
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
@@ -397,10 +398,10 @@ p{
   font-weight: 300;
   text-transform: uppercase;
 }
+#memberspace-section #memberspace-login-form ms-widget-ui{
+  display: block;
+}
 /* Forgot Email / forgot password text */
-#memberspace-section #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-primary {
-           color: red;
-       }
 .MemberSpaceWidgetInternal__BrandedInterface_footer {display: none; }
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
@@ -513,9 +514,6 @@ p{
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 4;
     }
-.invisible{
-  visibility: hidden;
-}
 .absolute{
   position: absolute;
 }
@@ -570,9 +568,6 @@ p{
 }
 .inline-block{
   display: inline-block;
-}
-.inline{
-  display: inline;
 }
 .flex{
   display: flex;
@@ -637,9 +632,6 @@ p{
 .basis-90p{
   flex-basis: 90%;
 }
-.resize{
-  resize: both;
-}
 .columns-2{
   -moz-columns: 2;
        columns: 2;
@@ -692,9 +684,6 @@ p{
 }
 .overflow-x-scroll{
   overflow-x: scroll;
-}
-.border{
-  border-width: 1px;
 }
 .border-y{
   border-top-width: 1px;

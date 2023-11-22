@@ -71,13 +71,15 @@ html {
 
     /* memberspace special styling */
     #memberspace-section #memberspace-login-form input {
-        @apply border-0 border-b border-black;
+        @apply border-0 border-b border-black rounded-none;
        }
        
        #memberspace-section #memberspace-login-form label {
         @apply p-5p font-montserrat uppercase font-light;
        }
-       
+       #memberspace-section #memberspace-login-form ms-widget-ui  {
+        @apply block;
+       }
        /* Forgot Email / forgot password text */
        #memberspace-section #memberspace-login-form .MemberSpaceWidgetInternal__InputWrapper_labelRight {
            color: green;
