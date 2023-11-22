@@ -400,6 +400,9 @@ p{
 #memberspace-section #memberspace-login-form ms-widget-ui{
   display: block;
 }
+#memberspace-section #memberspace-login-form div{
+  padding: 5%;
+}
 /* Forgot Email / forgot password text */
 .MemberSpaceWidgetInternal__BrandedInterface_footer {display: none; }
 *, ::before, ::after{

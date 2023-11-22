@@ -84,6 +84,9 @@ html {
        #memberspace-section #memberspace-login-form ms-widget-ui  {
         @apply block;
        }
+       #memberspace-section #memberspace-login-form div{
+        @apply p-5p;
+       }
 
 
        /* Forgot Email / forgot password text */
