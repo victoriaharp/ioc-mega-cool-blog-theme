@@ -84,7 +84,7 @@ html {
        #memberspace-section #memberspace-login-form ms-widget-ui  {
         @apply block justify-start;
        }
-       #memberspace-section #memberspace-login-form div{
+        #memberspace-login-form {
         @apply p-5p;
        }
 

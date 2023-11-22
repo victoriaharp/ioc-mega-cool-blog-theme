@@ -401,7 +401,7 @@ p{
   display: block;
   justify-content: flex-start;
 }
-#memberspace-section #memberspace-login-form div{
+#memberspace-login-form{
   padding: 5%;
 }
 /* Forgot Email / forgot password text */
