@@ -50,26 +50,25 @@ layout: default
 
 
  <!-- this is a placeholder section to later add the related posts -->
-<section class="p-5p">
- {% if item.type == "Travel Guide" %}
- <a href="{{item.url}}" class="bg-white">
-    <img src="{{item.product-image}}" class="aspect-square object-cover">
-    <div class="p-5">
-        {% if include.type %}
-        <p class="font-montserrat bg-light-grey uppercase inline-block p-1 text-sm">{{include.type}}</p>
-        {% endif %}
-        <h4 class="font-montserrat text-lg uppercase">{{item.title}}</h4>
-        <p class="font-montserrat text-sm">{{item.description}}</p>
-
-        {% assign cent-check = item.price | modulo: 100 %}
-        <p class="font-montserrat text-sm">
-            {% if cent-check > 1 %}
-            ${{item.price | divided_by: 100.00}}
+ <section class="p-5p bg-light-grey">
+    <h3 class="font-italiana text-center text-3xl pb-5p mb-0">Related Products</h3>
+    <div class="grid md:grid-cols-3 gap-5">
+        <!-- create counter, set value to 0 -->
+        {% assign related-product-count = 0 %}
+        <!-- start for loop -->
+        {% for item in site.products-guides %}
+            {% if item.url == page.url %}
+            <!-- do nothing -->
+            <!-- otherwise -->
             {% else %}
-            ${{item.price | divided_by: 100}}
+                {% if related-product-count < 3 %}
+                    <!-- if counter is less than 3 then output -->
+                    {% include product-loop-item.html type='Travel Guide' %}
+                    <!-- This adds +1 to the counter -->
+                    {% assign related-product-count = related-product-count | plus:1 %}
+                {% endif %}
             {% endif %}
-        </p>
+        {% endfor %}
     </div>
-</a>
-{% endif %}
+
 </section>
