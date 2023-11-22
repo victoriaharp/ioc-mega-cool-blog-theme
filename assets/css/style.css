@@ -393,9 +393,8 @@ p{
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 #memberspace-section #memberspace-login-form label{
-  padding: 5%;
   font-family: Montserrat, sans-serif;
-  font-weight: 300;
+  font-weight: 200;
   text-transform: uppercase;
 }
 #memberspace-section #memberspace-login-form ms-widget-ui{

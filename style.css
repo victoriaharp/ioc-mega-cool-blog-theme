@@ -75,11 +75,17 @@ html {
        }
        
        #memberspace-section #memberspace-login-form label {
-        @apply p-5p font-montserrat uppercase font-light;
+        @apply font-montserrat uppercase font-extralight;
        }
+       #memberspace-section #memberspace-login-form .MemberSpaceWidgetInternal__Typography_variant-input-label, #memberspace-section #memberspace-login-form .MemberSpaceWidgetInternal__Typography_variant-input-label2{
+        @apply font-light;
+       }
+
        #memberspace-section #memberspace-login-form ms-widget-ui  {
         @apply block;
        }
+
+
        /* Forgot Email / forgot password text */
        #memberspace-section #memberspace-login-form .MemberSpaceWidgetInternal__InputWrapper_labelRight {
            color: green;
