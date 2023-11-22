@@ -385,10 +385,10 @@ p{
   line-height: 1;
 }
 /* memberspace special styling */
-#memberspace-login-form input {
+#memberspace-section #memberspace-login-form input {
         border: 2px solid blue;
        }
-#memberspace-login-form label {
+#memberspace-section #memberspace-login-form label {
            border: 2px solid yellow;
        }
 /* Forgot Email / forgot password text */
@@ -598,11 +598,11 @@ p{
 .min-h-\[40vh\]{
   min-height: 40vh;
 }
-.min-h-\[50vh\]{
-  min-height: 50vh;
-}
 .min-h-80{
   min-height: 80vh;
+}
+.min-h-\[50vh\]{
+  min-height: 50vh;
 }
 .w-full{
   width: 100%;
