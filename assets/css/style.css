@@ -385,6 +385,9 @@ p{
   line-height: 1;
 }
 /* memberspace special styling */
+ms-css-seed-with-revert :not(svg):not(g):not(path):not(circle):not(ellipse):not(rect):not(line):not(polyline):not(polygon):not(stop):not(iframe) {
+        width: initial !important;
+    }
 #memberspace-section #memberspace-login-form input{
   width: 100%;
   border-radius: 0px;

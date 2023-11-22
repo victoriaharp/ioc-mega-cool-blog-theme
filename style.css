@@ -70,6 +70,10 @@ html {
 
 
     /* memberspace special styling */
+    ms-css-seed-with-revert :not(svg):not(g):not(path):not(circle):not(ellipse):not(rect):not(line):not(polyline):not(polygon):not(stop):not(iframe) {
+        width: initial !important;
+    }
+
     #memberspace-section #memberspace-login-form input {
         @apply border-0 border-b border-black rounded-none w-full;
        }
