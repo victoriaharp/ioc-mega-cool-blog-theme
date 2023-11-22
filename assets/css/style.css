@@ -580,6 +580,9 @@ p{
 .min-h-\[50vh\]{
   min-height: 50vh;
 }
+.min-h-80{
+  min-height: 80vh;
+}
 .w-full{
   width: 100%;
 }
