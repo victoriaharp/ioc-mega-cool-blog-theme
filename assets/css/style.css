@@ -398,7 +398,7 @@ ms-css-seed-with-revert :not(svg):not(g):not(path):not(circle):not(ellipse):not(
   padding: 5%;
 }
 /* Forgot Email / forgot password text */
-.MemberSpaceWidgetInternal__BrandedInterface_footer {display: none; }
+body .MemberSpaceWidgetInternal__BrandedInterface_footer{display: none; }
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -522,9 +522,6 @@ ms-css-seed-with-revert :not(svg):not(g):not(path):not(circle):not(ellipse):not(
   bottom: 0px;
   left: 0px;
 }
-.bottom-0 {
-  bottom: 0px;
-}
 .left-0 {
   left: 0px;
 }
@@ -592,26 +589,23 @@ ms-css-seed-with-revert :not(svg):not(g):not(path):not(circle):not(ellipse):not(
 .h-full {
   height: 100%;
 }
-.max-h-80 {
-  max-height: 80vh;
-}
 .max-h-90 {
   max-height: 90vh;
+}
+.max-h-80 {
+  max-height: 80vh;
 }
 .min-h-\[90vh\] {
   min-height: 90vh;
 }
-.min-h-screen {
-  min-height: 100vh;
+.min-h-90 {
+  min-height: 90vh;
 }
 .min-h-50 {
   min-height: 50vh;
 }
 .min-h-80 {
   min-height: 80vh;
-}
-.min-h-90 {
-  min-height: 90vh;
 }
 .min-h-\[40vh\] {
   min-height: 40vh;
@@ -741,9 +735,6 @@ ms-css-seed-with-revert :not(svg):not(g):not(path):not(circle):not(ellipse):not(
 .p-2 {
   padding: 0.5rem;
 }
-.p-5p {
-  padding: 5%;
-}
 .p-5 {
   padding: 1.25rem;
 }
@@ -755,6 +746,9 @@ ms-css-seed-with-revert :not(svg):not(g):not(path):not(circle):not(ellipse):not(
 }
 .p-4 {
   padding: 1rem;
+}
+.p-5p {
+  padding: 5%;
 }
 .px-5 {
   padding-left: 1.25rem;
@@ -789,14 +783,17 @@ ms-css-seed-with-revert :not(svg):not(g):not(path):not(circle):not(ellipse):not(
 .pb-5 {
   padding-bottom: 1.25rem;
 }
-.pb-5p {
-  padding-bottom: 5%;
+.pl-15p {
+  padding-left: 15%;
 }
-.pr-10p {
-  padding-right: 10%;
+.pr-5p {
+  padding-right: 5%;
 }
 .pt-2 {
   padding-top: 0.5rem;
+}
+.pb-5p {
+  padding-bottom: 5%;
 }
 .pl-1 {
   padding-left: 0.25rem;
@@ -809,12 +806,6 @@ ms-css-seed-with-revert :not(svg):not(g):not(path):not(circle):not(ellipse):not(
 }
 .pr-50p {
   padding-right: 50%;
-}
-.pl-15p {
-  padding-left: 15%;
-}
-.pr-5p {
-  padding-right: 5%;
 }
 .text-left {
   text-align: left;
@@ -945,14 +936,14 @@ html {
   .md\:pt-0 {
     padding-top: 0px;
   }
-  .md\:pl-5p {
-    padding-left: 5%;
-  }
   .md\:pl-0 {
     padding-left: 0px;
   }
   .md\:pr-5p {
     padding-right: 5%;
+  }
+  .md\:pl-5p {
+    padding-left: 5%;
   }
   .md\:text-left {
     text-align: left;
