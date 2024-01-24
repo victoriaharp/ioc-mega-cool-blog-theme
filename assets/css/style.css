@@ -750,6 +750,9 @@ body .MemberSpaceWidgetInternal__BrandedInterface_footer{display: none; }
 .p-5p {
   padding: 5%;
 }
+.p-10p {
+  padding: 10%;
+}
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
